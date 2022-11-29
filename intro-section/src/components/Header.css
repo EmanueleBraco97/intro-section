@@ -1,0 +1,114 @@
+header {
+  padding: 10px 20px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+}
+
+.nav-left {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  color: #696969;
+  font-weight: bold;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.logo {
+  width: 80px;
+}
+
+.nav-right {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.btn-register {
+  background-color: #fafafa;
+  cursor: pointer;
+  border-radius: 11px;
+  border-color: #696969;
+  width: 75px;
+  height: 35px;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.dropdown-main {
+  display: flex;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.dropdown-menu.active {
+  opacity: 1;
+  display: block;
+}
+
+.dropdown-menu.inactive {
+  opacity: 0;
+  display: none;
+}
+
+.dropdown-menu ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  list-style: none;
+  padding: 0px;
+}
+.dropdown-menu ul li {
+  display: flex;
+  column-gap: 10px;
+}
+
+.dropdown-menu ul li a {
+  text-decoration: none;
+  color: #696969;
+}
+
+.dropdown-menu ul li:hover a {
+  cursor: pointer;
+}
+
+/* Generics */
+.ul-nav {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+@media (min-width: 300px) and (max-width: 568px) {
+  .nav-left,
+  .nav-right {
+    width: 50%;
+  }
+  .ul-nav {
+    display: none;
+  }
+}
