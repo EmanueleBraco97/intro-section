@@ -51,7 +51,12 @@ h1 {
   list-style: none;
   display: flex;
   padding: 0;
-  gap: 30px;
+  justify-content: space-between;
+}
+
+.brand svg {
+  width: 114px;
+  height: 50px;
 }
 
 .section-right {
@@ -68,10 +73,45 @@ h1 {
   display: none;
 }
 
-@media (min-width: 300px) and (max-width: 568px) {
+@media (min-width: 300px) and (max-width: 768px) {
   main {
+    margin-top: 30px;
     width: 100%;
     flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  article {
+    text-align: center;
+    gap: 30px;
+  }
+
+  .brand svg {
+    height: 30px;
+    width: 70px;
+  }
+
+  .title-desktop {
+    display: none;
+  }
+
+  .title-mobile {
+    display: block !important;
+    font-size: 30px;
+  }
+
+  .paragraph-article {
+    font-size: 14px;
+  }
+
+  .button-article {
+    width: 40%;
+    height: 43px;
+    margin: auto;
+  }
+
+  .brand-list {
+    gap: 0;
   }
 
   .section-right {
@@ -84,7 +124,7 @@ h1 {
   }
 
   .hero-mobile {
-    width: 100%;
+    width: 90%;
     height: 30%;
     display: block !important;
   }

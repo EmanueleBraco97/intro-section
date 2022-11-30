@@ -1,5 +1,5 @@
 header {
-  padding: 10px 20px;
+  padding: 20px;
 }
 
 nav {
@@ -35,6 +35,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: right;
+}
+
+.navbar-right-responsive {
+  display: none;
 }
 
 .btn-register {
@@ -103,9 +107,17 @@ nav {
   column-gap: 15px;
 }
 
-@media (min-width: 300px) and (max-width: 568px) {
-  .nav-left,
+@media (min-width: 300px) and (max-width: 768px) {
+  .nav-left {
+    width: 50%;
+  }
+
   .nav-right {
+    display: none;
+  }
+
+  .navbar-right-responsive {
+    display: flex;
     width: 50%;
   }
   .ul-nav {

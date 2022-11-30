@@ -1,6 +1,7 @@
 import "./Header.css";
 import logo from "../img/logo.svg";
 import IconArrow from "./IconArrow";
+import NavbarResponsive from "./NavbarResponsive";
 import todo from "../img/icon-todo.svg";
 import calendar from "../img/icon-calendar.svg";
 import reminders from "../img/icon-reminders.svg";
@@ -11,6 +12,7 @@ import { useRef, useState, useEffect } from "react";
 const Header = () => {
   const [openFeatures, setOpenFeatures] = useState(false);
   const [openCompany, setOpenCompany] = useState(false);
+
   let featuresMenuRef = useRef();
   let companyMenuRef = useRef();
   useEffect(() => {
@@ -122,6 +124,9 @@ const Header = () => {
               <button className="btn-register">Register</button>
             </li>
           </ul>
+        </div>
+        <div className="navbar-right-responsive">
+          <NavbarResponsive />
         </div>
       </nav>
     </header>
